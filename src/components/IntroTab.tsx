@@ -79,7 +79,7 @@ export default function IntroTab({ onStartTour, onGoSimulator, onSwitchTab }: In
             <span>🧬 내 비즈니스의 4대 라이프 라인</span>
           </h3>
           <p className="text-slate-500 text-[11px] sm:text-xs leading-relaxed">
-            복잡한 다중 구도가 아닌, <strong>가족(A), 직장(B), 지인(C), 친구(D)</strong> 단 4개의 상호 밀착 라인으로 끈끈하게 도우며 성장하는 고도의 안정형 팀 비즈니스 구조입니다.
+            복잡한 다중 구도가 아닌, 예를 들어 가족(A), 직장(B), 지인(C), 친구(D) 이렇게 4개의 소중한 관계의 사람들을 상호 밀착 라인으로 끈끈하게 도우며 성장하는 고도의 안정형 팀 비즈니스 구조입니다.
           </p>
           <div className="bg-white p-3 sm:p-4 rounded-xl border border-teal-100 text-xs sm:text-sm flex items-start space-x-2">
             <CheckCircle className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
@@ -174,13 +174,13 @@ export default function IntroTab({ onStartTour, onGoSimulator, onSwitchTab }: In
         </div>
       </motion.div>
 
-      {/* 세 개의 필수 추천 링크 배너 */}
+      {/* 유사나 주요 링크 및 추천 안내 */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-4"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
       >
         <a
           href="https://open.kakao.com/o/sg1nwMZ"
@@ -208,7 +208,7 @@ export default function IntroTab({ onStartTour, onGoSimulator, onSwitchTab }: In
         >
           <div>
             <span className="text-3xl block mb-1 group-hover:scale-105 transition-transform">📝</span>
-            <h4 className="text-xs sm:text-sm font-black text-slate-900">유사나 회원되기</h4>
+            <h4 className="text-xs sm:text-sm font-black text-slate-900">유사나 회원되기<br className="hidden sm:block" />(소개회원 9130756)</h4>
             <p className="text-slate-500 text-[10px] sm:text-xs mt-1 leading-normal">
               최대 10% 추가 적립을 받는 브랜드 공식 회원 혜택을 여세요.
             </p>
@@ -233,6 +233,24 @@ export default function IntroTab({ onStartTour, onGoSimulator, onSwitchTab }: In
           </div>
           <span className="text-indigo-600 font-extrabold text-[10px] sm:text-xs mt-2.5 inline-block group-hover:translate-x-0.5 transition-transform">
             모아보기 열기 →
+          </span>
+        </a>
+
+        <a
+          href="https://www.youtube.com/@usanakorea"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group bg-white hover:bg-red-50/10 border border-slate-200 hover:border-red-300 p-4 rounded-2xl shadow-sm text-center transition-all flex flex-col justify-between"
+        >
+          <div>
+            <span className="text-3xl block mb-1 group-hover:scale-105 transition-transform">🎥</span>
+            <h4 className="text-xs sm:text-sm font-black text-slate-900">공식 유튜브</h4>
+            <p className="text-slate-500 text-[10px] sm:text-xs mt-1 leading-normal">
+              공식 유튜브 채널에서 유용한 비디오 정보 정보와 뉴스를 만나보세요.
+            </p>
+          </div>
+          <span className="text-red-600 font-extrabold text-[10px] sm:text-xs mt-2.5 inline-block group-hover:translate-x-0.5 transition-transform">
+            유튜브 채널 가기 →
           </span>
         </a>
       </motion.div>

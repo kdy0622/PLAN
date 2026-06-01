@@ -34,7 +34,7 @@ export default function Footer({ onSwitchTab, currentTab }: FooterProps) {
           ))}
         </div>
 
-        {/* 3대 추천 직접 연결 단추 */}
+        {/* 4대 추천 직접 연결 단추 */}
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="https://open.kakao.com/o/sg1nwMZ"
@@ -53,7 +53,7 @@ export default function Footer({ onSwitchTab, currentTab }: FooterProps) {
             className="flex items-center space-x-2 bg-sky-600 hover:bg-sky-700 text-white font-extrabold px-6 py-3 rounded-full text-xs sm:text-sm shadow-md transition-all active:scale-95"
           >
             <ExternalLink className="w-4 h-4 text-white" />
-            <span>📝 유사나 회원가입 링크</span>
+            <span>📝 유사나 회원가입(소개회원 9130756)</span>
           </a>
           
           <a
@@ -63,13 +63,23 @@ export default function Footer({ onSwitchTab, currentTab }: FooterProps) {
             className="flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-6 py-3 rounded-full text-xs sm:text-sm shadow-md transition-all active:scale-95"
           >
             <Sparkles className="w-4 h-4 text-white" />
-            <span>✨ 유사나 알아보기 (리틀리)</span>
+            <span>✨ 유사나 알아보기(리틀리)</span>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@usanakorea"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white font-extrabold px-6 py-3 rounded-full text-xs sm:text-sm shadow-md transition-all active:scale-95"
+          >
+            <ExternalLink className="w-4 h-4 text-white" />
+            <span>🎥 유사나 공식 유튜브</span>
           </a>
         </div>
 
         {/* 회사 교육용 법적 디스크레이머 */}
         <div className="text-[11px] text-slate-500 leading-relaxed max-w-3xl mx-auto border-t border-slate-800/60 pt-8">
-          본 가이드 어플리케이션은 유사나 브랜드를 정직하게 전달하고자 개별 독립 디스트리뷰터가 예비 가망파트너들의 올바른 마케팅 이해를 돕기 목적으로 기획·개발한 특수 제작 교육 솔루션입니다. 본 가이드에 수록된 모든 시뮬레이션 공식은 공식 본사의 마케팅 규범 및 한국 직접판매공제조합 법적 규칙을 성실히 준수하였습니다.
+          본 가이드 어플리케이션은 유사나 브랜드를 정직하게 전달하고자 개별 독립 디스트리뷰터가 예비 가망파트너들의 올바른 마케팅 이해를 돕기 목적으로 기획·개발한 특수 제작 교육 솔루션입니다. 본 가이드에 수록된 모든 수당등은 예시를 든 것으로 해당 금액을 보장하는 것은 아님며 개별적인 노력에 따라 변동이 있음을 알려드립니다.
         </div>
 
         {/* 저작권 표시 기여 (by kdy) */}
