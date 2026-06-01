@@ -9,7 +9,7 @@ export interface Step {
 export interface Product {
   name: string;
   p: number;
-  category: string;
+  category?: string;
 }
 
 export interface FaqItem {

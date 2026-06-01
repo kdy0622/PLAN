@@ -8,9 +8,9 @@ interface FooterProps {
 export default function Footer({ onSwitchTab, currentTab }: FooterProps) {
   const links = [
     { id: "intro", label: "🌱 소개 및 가치" },
-    { id: "steps", label: "🔄 11단계 보상투어" },
+    { id: "steps", label: "🔄 보상플랜설명" },
     { id: "simulator", label: "🎮 공유연결 시뮬레이션" },
-    { id: "vs", label: "📊 1BC vs 3BC 비법" },
+    { id: "vs", label: "📊 1BC vs 3bc" },
     { id: "glossary", label: "📖 보상 용어사전" },
     { id: "faq", label: "❓ 자주 묻는 질문" },
   ];
@@ -43,7 +43,7 @@ export default function Footer({ onSwitchTab, currentTab }: FooterProps) {
             className="flex items-center space-x-2 bg-teal-600 hover:bg-teal-700 text-white font-extrabold px-6 py-3 rounded-full text-xs sm:text-sm shadow-md transition-all active:scale-95"
           >
             <MessageSquare className="w-4 h-4 text-white" />
-            <span>💬 1:1 무료 컨설팅 카톡방</span>
+            <span>💬 1:1문의 카톡방</span>
           </a>
           
           <a

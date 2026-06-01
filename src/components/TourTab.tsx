@@ -35,7 +35,7 @@ export default function TourTab({ onShowToast }: TourTabProps) {
       <div className="bg-white border border-slate-200 p-5 sm:p-6 rounded-3xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <h3 className="text-xl sm:text-2xl font-black text-slate-900 leading-snug">
-            물흐르듯 흐르는 유사나 보상플랜 11단계 투어
+            유사나 보상플랜 투어
           </h3>
           <p className="text-slate-500 text-xs sm:text-sm mt-1">
             각 단계를 차례대로 정독하면서 유사나만이 가진 공정하고 정직한 마케팅 룰의 진수를 배워보세요.

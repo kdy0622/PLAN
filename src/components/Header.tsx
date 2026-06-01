@@ -13,8 +13,8 @@ export default function Header({ onConsultingClick }: HeaderProps) {
             USANA
           </span>
           <span className="text-slate-300 text-xl hidden sm:inline">|</span>
-          <span className="text-slate-900 font-extrabold text-lg sm:text-xl tracking-tight leading-none">
-            공정과 상생의 보상플랜 마스터 가이드
+          <span className="text-slate-900 font-black text-2xl tracking-tight leading-none">
+            보상플랜
           </span>
         </div>
         <div className="flex items-center space-x-2">
@@ -22,10 +22,10 @@ export default function Header({ onConsultingClick }: HeaderProps) {
             href="https://open.kakao.com/o/sg1nwMZ"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 bg-teal-600 hover:bg-teal-700 active:scale-95 transition-all text-white px-5 py-3 rounded-full font-bold text-sm sm:text-base shadow-sm hover:shadow shadow-teal-600/20"
+            className="flex items-center space-x-2 bg-teal-600 hover:bg-teal-700 active:scale-95 transition-all text-white px-4 py-2.5 rounded-full font-black text-sm shadow-sm hover:shadow shadow-teal-600/20"
           >
-            <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-            <span>1:1 무료 컨설팅</span>
+            <MessageSquare className="w-4 h-4 text-white" />
+            <span>1:1문의</span>
             <ExternalLink className="w-3.5 h-3.5 text-teal-100" />
           </a>
         </div>
