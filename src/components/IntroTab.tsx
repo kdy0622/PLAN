@@ -254,6 +254,40 @@ export default function IntroTab({ onStartTour, onGoSimulator, onSwitchTab }: In
           </span>
         </a>
       </motion.div>
+
+      {/* 보상플랜 간단한 영상 보기 섹션 */}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.25 }}
+        className="bg-gradient-to-br from-red-50/40 via-white to-red-50/20 border border-red-100 p-5 sm:p-6 rounded-3xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-5"
+      >
+        <div className="flex items-start space-x-3.5 min-w-0 text-left">
+          <div className="bg-red-50 text-red-600 p-3 sm:p-4 rounded-2xl shrink-0 shadow-sm border border-red-100 mt-1">
+            <span className="text-2xl sm:text-3xl block leading-none">🎬</span>
+          </div>
+          <div className="space-y-1">
+            <h4 className="text-sm sm:text-base font-black text-slate-900 flex items-center flex-wrap gap-1.5">
+              <span>유사나 보상플랜 간단한 영상 보기</span>
+              <span className="bg-red-600 text-white font-extrabold text-[9px] px-1.5 py-0.5 rounded-md uppercase tracking-wider">추천 영상</span>
+            </h4>
+            <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
+              가장 쉽고 직관적으로 요약된 유사나 보상플랜 핵심 비디오 가이드입니다. 복잡한 유통 수당 수치와 혜택을 짧은 시간 안에 알기 쉽게 마스터해 드립니다.
+            </p>
+          </div>
+        </div>
+        
+        <a
+          href="https://youtu.be/JNvWRdPQzXc?si=hxTCcStV2tgim5g6"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto shrink-0 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-black px-6 py-3.5 rounded-2xl text-xs sm:text-sm shadow-md shadow-red-600/10 active:scale-95 transition-all text-center flex items-center justify-center space-x-2 cursor-pointer"
+        >
+          <span>영상 시청하기</span>
+          <ExternalLink className="w-3.5 h-3.5" />
+        </a>
+      </motion.div>
     </div>
   );
 }

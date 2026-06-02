@@ -5,13 +5,13 @@ import { faqData } from "../data";
 
 export default function FaqTab() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [openIndexes, setOpenIndexes] = useState<number[]>([0]); // Set first FAQ open by default
+  const [openQuestions, setOpenQuestions] = useState<string[]>([faqData[0]?.q || ""]); // Set first FAQ open by default
 
-  const toggleAccordion = (index: number) => {
-    if (openIndexes.includes(index)) {
-      setOpenIndexes(openIndexes.filter((i) => i !== index));
+  const toggleAccordion = (q: string) => {
+    if (openQuestions.includes(q)) {
+      setOpenQuestions(openQuestions.filter((item) => item !== q));
     } else {
-      setOpenIndexes([...openIndexes, index]);
+      setOpenQuestions([...openQuestions, q]);
     }
   };
 
@@ -61,8 +61,8 @@ export default function FaqTab() {
       {/* FAQ 카드형 아코디언 매핑 */}
       {filteredFaqs.length > 0 ? (
         <div className="space-y-3.5">
-          {filteredFaqs.map((faq, index) => {
-            const isOpen = openIndexes.includes(index);
+          {filteredFaqs.map((faq) => {
+            const isOpen = openQuestions.includes(faq.q);
             return (
               <motion.div
                 layout
@@ -74,7 +74,7 @@ export default function FaqTab() {
               >
                 {/* 헤더 */}
                 <button
-                  onClick={() => toggleAccordion(index)}
+                  onClick={() => toggleAccordion(faq.q)}
                   className="w-full p-5 sm:p-6 text-left flex justify-between items-start gap-4 hover:bg-slate-50/50 transition-colors cursor-pointer focus:outline-none"
                 >
                   <div className="space-y-1.5 flex-1">
