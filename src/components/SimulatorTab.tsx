@@ -92,8 +92,9 @@ export default function SimulatorTab({ onShowToast }: SimulatorTabProps) {
             <span>시뮬레이터 점수 0으로 리셋</span>
           </button>
           
-          <div className="text-slate-500 font-medium text-xs sm:text-sm">
-            💡 환산 수당 공식: (모든 내 가게 정산 CP 합산) × 고정환율 1,150원
+          <div className="text-slate-500 font-bold text-[11px] sm:text-xs text-left sm:text-right space-y-0.5">
+            <div>💡 환산 수당 공식 : (모든 내 가게(BC) 정산 CP합산) * 1,150원</div>
+            <div className="text-slate-400 font-semibold text-[10px] sm:text-[11px]">CP : 각 가게(BC)의 좌우 실적의 적은 쪽 점수 * 20%</div>
           </div>
         </div>
       </div>
